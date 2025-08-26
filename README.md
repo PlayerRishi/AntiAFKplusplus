@@ -1,0 +1,2 @@
+# AntiAFKplusplus
+Anti AFK mod!
