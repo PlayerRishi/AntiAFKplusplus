@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "antiafkplusplus",
+  "version": "${version}",
+  "name": "AntiAFKplusplus",
+  "description": "Adds fake chat messaging and realistic movements to make it look like you're not AFK!",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/antiafkplusplus/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.pluginmakers.antiafkplusplus.client.AntiafkplusplusDataGenerator"
+    ],
+    "client": [
+      "org.pluginmakers.antiafkplusplus.client.AntiafkplusplusClient"
+    ],
+    "main": [
+      "org.pluginmakers.antiafkplusplus.Antiafkplusplus"
+    ]
+  },
+  "mixins": [
+    "antiafkplusplus.mixins.json",
+    {
+      "config": "antiafkplusplus.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
