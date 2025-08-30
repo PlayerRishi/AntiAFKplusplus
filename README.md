@@ -108,4 +108,4 @@ This mod is for educational and single-player use. Always follow server rules an
 
 ## License
 
-All Rights Reserved - See LICENSE.txt for details
+Custom License - See LICENSE.txt for details
